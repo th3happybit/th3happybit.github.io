@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mokhfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
 
-    <h1>Mokhfolio</h1>
-    <p>This is a portoflio</p>
-    
+<head>
+    <title>MOKHFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css" /></head>
+
+<body>
+    <section class="content header" id="home">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars green"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="active"><a href="#home">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li>
+                        <a href="#"><img id="logo-navbar-middle" src="img/Logo.png" height="60px" alt="Logo Thing main logo"></a>
+                    </li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row" style="height:60vh;">
+            <div class="col-md-12 text-center my-auto">
+                <h1 class="animated fadeInDown">HI! I'M <span class="green">OMAR MOKHFI</span></h1>
+                <br>
+                <h2 class="animated fadeIn">I'M A DESIGNER AND A DEVELOPER FROM ALGERIA, AFRICA</h2>
+                <button href="#" class="button1 animated rollIn delay-1s">MY RESUME</button>
+                <button href="#" class="button2 animated jackInTheBox delay-2s">MY WORK</button>
+            </div>
+        </div>
+    </section>
+    <section class="content text-center" id="about">
+        <h2 style="font-size:3rem;">ABOUT <span class="green">ME</span></h2>
+        <br>
+        <br>
+        <div class="7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"> <img class="w-100" src="img/omar.jpg" height="85%">
+                        <button class="w-100 button3" style="height:15%;margin-top:0;">DOWNLOAD MY RESUME</button>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="about-content text-left" style="overflow:auto;">
+                            <h5 class="speech-bubble text-center">Hello</h5>
+                            <br>
+                            <h3>I'M <span class="green font-weight-bold">OMAR MOKHFI</span></h3>
+                            <h4>I can do any job with my pc and a lot of coffee</h4>
+                            <hr>
+                            <table class="col-md-12">
+                                <tr>
+                                    <td class="font-weight-bold">Age</td>
+                                    <td class="col-md-7 padt">
+                                        <script>
+                                            document.write((new Date()).getFullYear() - 1998)
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Adresse</td>
+                                    <td class="col-md-7 padt">56 Sidi Okba Tighennif, Mascara</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">E-mail</td>
+                                    <td class="col-md-7 padt">omar.mokhfi.official@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Mobile</td>
+                                    <td class="col-md-7 padt">(+213) 66-623-5548</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Technologies</td>
+                                    <td class="col-md-7 padt">HTML - CSS - JS - Bootstrap - PHP - Django - Firebase - JAVA</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Tools</td>
+                                    <td class="col-md-7 padt">Photoshop - Illustrator - Premiere - 3DS Max - Unity3D</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="list">
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="contact">
+        <div class="text-center">
+            <div>
+                <h2 style="font-size:3rem;">CONTACT ME</h2>
+            </div>
+            <div class="row text-center">
+                <div class="column my-auto mx-auto">
+                    <form action="">
+                        <label for="fname">E-MAIL</label>
+                        <input type="text" id="fname" name="firstname" placeholder="E-mail here">
+                        <label for="lname">OBJECT</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Object here">
+                        <label for="subject">CONTENT</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" value="Submit" style="width:100%;"> </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row footer text-center">
+        <p class="my-auto mx-auto">ALL RIGHTS RESERVED &copy; <script>document.write((new Date()).getFullYear())</script> MOKHFOLIO</p>
+    </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+    $('.navbar-nav li').hover(function () {
+        $(this).addClass('animated pulse');
+    });
+    $('.navbar-nav li').mouseleave(function () {
+        $(this).removeClass('animated pulse');
+    });
+</script>
+
 </html>
