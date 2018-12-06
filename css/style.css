@@ -280,5 +280,9 @@ label {
     margin: -50px;
 }
 
+.s-link:hover {
+    color: cadetblue;
+}
+
 
 

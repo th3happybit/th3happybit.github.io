@@ -13,11 +13,6 @@ var parentNode = document.getElementById("portfolio");
 firebase.database().ref('work/').once('value').then(function(snapshot) {
     snapshot.forEach(function(userSnapshot) {
         var article = userSnapshot.val();
-        console.log(article.title);
-        console.log(article.subtitle);
-        console.log(article.head);
-        console.log(article.description);
-        
         var parent = document.createElement("div");
         parent.setAttribute("class", "col-md-4 col-sm-4 team animated slideInUp");
         parent.setAttribute("data-tag", article.type);
@@ -28,6 +23,7 @@ firebase.database().ref('work/').once('value').then(function(snapshot) {
                 +'<h4>' + article.head + '</h4>'
                 +'<p>' + article.description +'</p>'
             +'</div>'
+            +'<div class="s-link"> <a href="' + article.link + '"class="blue"><h4>DETAILS</h4></a> </div>'
         +'</div>'
         +'</div>'
         +'<div class="team-title text-left">'
