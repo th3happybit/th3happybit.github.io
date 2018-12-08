@@ -17,7 +17,20 @@ $(document).ready(function(){
 $('.navbar-nav li').hover(function () {
     $(this).addClass('animated pulse');
 });
+
 $('.navbar-nav li').mouseleave(function () {
     $(this).removeClass('animated pulse');
+});
+
+// contact 
+$('#contactme').click(function(){
+  var email = {
+    mail : $('#mail').val(),
+    object : $('#object').val(),
+    content : $('#content').val(),
+    date : new Date().getDay()+"-"+new Date().getMonth()+"-"+new Date().getFullYear(),
+    time : new Date().getHours()+":"+new Date().getMinutes()
+  }
+  firebase.database().ref().child('inbox').push(email);
 });
 

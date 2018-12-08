@@ -229,7 +229,7 @@ input[type=text]:focus, textarea:focus {
     border: solid 1px white;
 }
 
-input[type=submit] {
+input[type=button] {
     background-color: #41B981;
     color: white;
     padding: 12px 20px;
@@ -237,7 +237,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
     background-color: white;
     color: #41B981;
 }
@@ -282,6 +282,26 @@ label {
 
 .s-link:hover {
     color: cadetblue;
+}
+
+.button4 {
+    margin-top: 50px;
+    color: #41B981;
+    width: 250px;
+    border: solid 1px #41B981; 
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.button4:hover {
+	background-color: #41B981;
+    color: black;
+}
+
+.button4:focus {
+	outline: 0;
 }
 
 
