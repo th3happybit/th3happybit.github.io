@@ -30,11 +30,11 @@ h2 {
 }
 
 .green {
-	color: #41B981; 
+	color: #ffd300; 
 }
 
 .grey {
-    color: darkslategray;
+    color: #4f4f2f;
 }
 
 @media (min-width: 768px) {
@@ -63,24 +63,24 @@ h2 {
     }
 
 #navbarSupportedContent > ul > li > a:hover {
-    color: #41B981;
+    color: #ffd300;
     text-decoration: none;
 }
 
 .active {
-    color: #41B981;
+    color: #ffd300;
 }
 
 /* About */
 
 #about {
     padding: 50px 0;
-    background-color: darkslategray;
+    background-color: #4f4f2f;
 }
 
 .list {
-	background-color: #41B981;
-    height: 15%;
+	background-color: #ffd300;
+    height: 20%;
 }
 
 .about-content {
@@ -114,7 +114,7 @@ h2 {
 
 .speech-bubble {
 	position: relative;
-	background: #41b981;
+	background: #ffd300;
 	border-radius: 0;
     width: 100px;
     padding: 8px 5px;
@@ -129,7 +129,7 @@ h2 {
 	width: 0;
 	height: 0;
 	border: 13px solid transparent;
-	border-top-color: #41b981;
+	border-top-color: #ffd300;
 	border-bottom: 0;
 	border-left: 0;
 	margin-left: -6.5px;
@@ -161,9 +161,9 @@ h2 {
 
 .button1 {
     margin-top: 50px;
-    color: #41B981;
+    color: #ffd300;
     width: 150px;
-    border: solid 1px #41B981; 
+    border: solid 1px #ffd300; 
     padding: 10px 10px;
     background-color: transparent;
     transition: all 1s ease;
@@ -171,7 +171,7 @@ h2 {
 }
 
 .button1:hover {
-	background-color: #41B981;
+	background-color: #ffd300;
     color: white;
 }
 
@@ -180,9 +180,9 @@ h2 {
 }
 
 .button2 {
-    color: #41B981;
+    color: #ffd300;
     width: 150px;
-    border: solid 0px #41B981; 
+    border: solid 0px #ffd300; 
     padding: 10px 10px;
     background-color: white;
     transition: all 1s ease;
@@ -190,21 +190,21 @@ h2 {
 }
 
 .button2:hover {
-	background-color: #41B981;
+	background-color: #ffd300;
     color: white;
 }
 .button3 {
     color: darkslategray;
     width: 150px;
-    border: solid 0px #41B981; 
+    border: solid 0px #ffd300; 
     padding: 10px 10px;
-    background-color: #41B981;
+    background-color: #ffd300;
     transition: all 1s ease;
     cursor: pointer;
 }
 
 .button3:hover {
-	background-color: #41B981;
+	background-color: #ffd300;
     color: white;
 }
 
@@ -220,7 +220,7 @@ input[type=text], textarea {
     margin-bottom: 16px;
     resize: vertical;
     background-color: transparent;
-    border: solid 1px #41B981;
+    border: solid 1px #ffd300;
     color: white;
 }
 
@@ -230,7 +230,7 @@ input[type=text]:focus, textarea:focus {
 }
 
 input[type=button] {
-    background-color: #41B981;
+    background-color: #ffd300;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -239,7 +239,7 @@ input[type=button] {
 
 input[type=button]:hover {
     background-color: white;
-    color: #41B981;
+    color: #ffd300;
 }
 
 .container {
@@ -274,7 +274,7 @@ label {
 /* footer */
 
 .footer {
-	background-color: #41B981;
+	background-color: #ffd300;
     color: white;
     padding: 30px 0px;
     margin: -50px;
@@ -286,9 +286,9 @@ label {
 
 .button4 {
     margin-top: 50px;
-    color: #41B981;
+    color: #ffd300;
     width: 250px;
-    border: solid 1px #41B981; 
+    border: solid 1px #ffd300; 
     padding: 10px 30px;
     background-color: transparent;
     transition: all 1s ease;
@@ -296,7 +296,7 @@ label {
 }
 
 .button4:hover {
-	background-color: #41B981;
+	background-color: #ffd300;
     color: black;
 }
 
