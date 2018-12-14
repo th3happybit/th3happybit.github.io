@@ -2,13 +2,15 @@
 <html>
 
 <head>
-    <title>OUSSFOLIO</title>
+    <title>thehappybit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/animate.css" /></head>
+    <link rel="stylesheet" href="css/animate.css" />
+
+</head>
 
 <body>
     <section class="content header" id="home">
@@ -19,18 +21,19 @@
                     <li class="active"><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li>
-                        <a href="#"><img id="logo-navbar-middle" src="img/Logo.png" height="60px" alt="Logo Thing main logo"></a>
+                        <a href="#"><img id="logo-navbar-middle" src="img/logo/logogo4.png" height="60px" alt="Logo Thing main logo"></a>
                     </li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
+
         <div class="row" style="height:60vh;">
             <div class="col-md-12 text-center my-auto">
-                <h1 class="animated fadeInDown">HI! I'M <span class="green">OUSSAMA MESSABIH</span></h1>
+                <h1 id="myname"></h1>
                 <br>
-                <h2 class="animated fadeIn">I'M A DEVELOPER FROM ALGERIA, AFRICA</h2>
+                <h2 id="whoiam"></h2>
                 <button onclick="window.open('mycv.html')" class="button1 animated rollIn delay-1s">MY RESUME</button>
                 <button onclick="window.open('portfolio.html')" class="button2 animated jackInTheBox delay-2s">MY WORK</button>
             </div>
@@ -43,8 +46,8 @@
         <div class="7">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4"> <img class="w-100" src="img/ouss.CR2" height="85%">
-                        <button id="download" onclick="window.open('resume.pdf');" class="w-100 button3" style="height:20%;margin-top:0;">DOWNLOAD MY RESUME</button>
+                    <div class="col-md-4"> <img class="w-100" src="img/ouss.png" height="85%">
+                        <button id="download" onclick="window.open('resume.pdf');" class="w-100 button3" style="height:15%;margin-top:0;">DOWNLOAD MY RESUME</button>
                     </div>
                     <div class="col-md-8">
                         <div class="about-content text-left" style="overflow:auto;">
@@ -76,7 +79,11 @@
                                 </tr>
                                 <tr>
                                     <td class="font-weight-bold">Technologies</td>
-                                    <td class="col-md-7 padt">HTML - CSS - JS - Bootstrap - PHP - Django - Firebase - JAVA</td>
+                                    <td class="col-md-7 padt">HTML - CSS - JS - Bootstrap - PHP - Laravel - PYTHON - Django - Firebase - JAVA - </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold"> </td>
+                                    <td class="col-md-7 padt">ANDROID</td>
                                 </tr>
                                 <tr>
                                     <td class="font-weight-bold">Hobbies</td>
@@ -111,7 +118,7 @@
                         <input type="text" id="object" name="object" placeholder="Object here">
                         <label for="subject">CONTENT</label>
                         <textarea id="content" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                        <input type="button" id="contactme" value="Submit" style="width:100%;"> </form>
+                        <input type="button" id="contactme" value="Submit" style="width:100%;font-size: 1.5rem;"> </form>
                 </div>
             </div>
         </div>
@@ -125,6 +132,20 @@
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-database.js"></script>
 <script src="js/dbConnect.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script src="js/index.js"></script>
+<script>
+  var typed = new Typed('#myname', {
+    strings: [`HI! I'M <span class="green">OUSSAMA MESSABIH</span>`],
+    typeSpeed: 80,
+    loop: false,
+    onComplete: function() {
+        new Typed('#whoiam', {
+        strings: [`I'M A DEVELOPER FROM ALGERIA, AFRICA`],
+        typeSpeed: 80,
+        }) 
+        },
+  });
+</script>
 
 </html>

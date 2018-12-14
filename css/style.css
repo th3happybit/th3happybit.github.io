@@ -1,13 +1,12 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url('../img/background.png');
+    font-family: 'VT323', monospace;
+    background-image: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -25,16 +24,24 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: WHITE;
 }
-
+a {
+    font-size: 1.5rem;
+}
+label {
+    font-size: 1.5rem;
+}
+button {
+    font-size: 1.5rem;
+}
 .green {
 	color: #ffd300; 
 }
 
 .grey {
-    color: #4f4f2f;
+    color: #656565;
 }
 
 @media (min-width: 768px) {
@@ -75,12 +82,12 @@ h2 {
 
 #about {
     padding: 50px 0;
-    background-color: #4f4f2f;
+    background-color: #656565;
 }
 
 .list {
 	background-color: #ffd300;
-    height: 20%;
+    height: 15%;
 }
 
 .about-content {
@@ -303,6 +310,3 @@ label {
 .button4:focus {
 	outline: 0;
 }
-
-
-
