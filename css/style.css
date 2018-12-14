@@ -41,7 +41,7 @@ button {
 }
 
 .grey {
-    color: #656565;
+    color: #212121;
 }
 
 @media (min-width: 768px) {
@@ -82,7 +82,7 @@ button {
 
 #about {
     padding: 50px 0;
-    background-color: #656565;
+    background-color: #212121;
 }
 
 .list {
