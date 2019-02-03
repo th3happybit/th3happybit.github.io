@@ -12,6 +12,7 @@ var parentNode = document.getElementById("portfolio");
 
 firebase.database().ref('work/').once('value').then(function(snapshot) {
     snapshot.forEach(function(userSnapshot) {
+        console.log(userSnapshot);
         var article = userSnapshot.val();
         var parent = document.createElement("div");
         parent.setAttribute("class", "col-md-4 col-sm-4 team animated slideInUp");

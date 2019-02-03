@@ -25,13 +25,16 @@ $('.navbar-nav li').mouseleave(function () {
 
 // contact 
 $('#contactme').click(function(){
-  var email = {
-    mail : $('#mail').val(),
-    object : $('#object').val(),
-    content : $('#content').val(),
-    date : new Date().getDay()+"-"+new Date().getMonth()+"-"+new Date().getFullYear(),
-    time : new Date().getHours()+":"+new Date().getMinutes()
-  }
-  firebase.database().ref().child('inbox').push(email);
+  Email.send({
+    SecureToken : "dbb4bd66-61b7-4629-9787-864a556629af",
+    To : 'o.messabih@esi-sba.dz',
+    From : $('#mail').val(),
+    Subject : $('#object').val(),
+    Body : $('#content').val()
+  }).then(
+    message => alert(message)
+  );
 });
+
+ 
 
