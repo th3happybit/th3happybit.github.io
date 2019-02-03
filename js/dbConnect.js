@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyCONREgfcZQByahL3HqTwTlm3fEDHMucNQ",
-    authDomain: "poll-4dbe8.firebaseapp.com",
-    databaseURL: "https://poll-4dbe8.firebaseio.com",
-    projectId: "poll-4dbe8",
-    storageBucket: "poll-4dbe8.appspot.com",
-    messagingSenderId: "567451495712"
+    apiKey: "AIzaSyCyJeW-_4tM_8Hyi1wDoC9ms2Zt8HG93H0",
+    authDomain: "oussfolio.firebaseapp.com",
+    databaseURL: "https://oussfolio.firebaseio.com",
+    projectId: "oussfolio",
+    storageBucket: "oussfolio.appspot.com",
+    messagingSenderId: "41514122965"
   };
   firebase.initializeApp(config);
   
